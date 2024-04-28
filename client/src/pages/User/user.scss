@@ -1,0 +1,83 @@
+$grey-b: #2a2b30;
+$greyb-b: #54565f;
+$greft-b: #868893;
+$orange-b: #ffdd3c;
+$black-b: #1E1F22;
+
+.u-wrapper-f{
+    width: 100%;
+    padding: 100px;
+    background-color: $black-b;
+    .u-wrapper{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .u-card{
+            width: 50%;
+            background-color: $grey-b;
+            border-radius: 20px;
+            border: 2px solid $greyb-b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px;
+
+            img{
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                border: 4px solid $greft-b;
+                object-fit: cover;
+                margin-bottom: 50px;
+            }
+            .u-line{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 80%;
+                background-color: transparent;
+                border: 2px solid $greyb-b;
+                border-radius: 20px;
+                padding: 20px;
+                margin: 30px;
+                h3{
+                    font-size: clamp(0.5rem, 0.7rem + 0.9vw, 1.2rem) !important;
+                    color: $orange-b;
+                }
+            }
+            .b-follow{
+                width: 80%;
+                background-color: $orange-b;
+                color: black;
+                border-radius: 20px;
+                border: none;
+                padding: 20px 0;
+                font-size: 1.7rem;
+                font-weight: 600;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+            .b-followed{
+                width: 80%;
+                background-color: $black-b;
+                color: white;
+                font-size: 1.4rem;
+                padding: 25px 0;
+                border: 2px solid $greyb-b;
+                border-radius: 20px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1400px){
+    .u-card{
+        img{
+            width: 200px !important;
+        }
+    }
+}
